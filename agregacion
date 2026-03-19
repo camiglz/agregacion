@@ -1,0 +1,37 @@
+// Camila Gonzalez Mota
+//Inicio de programa
+using System; 
+
+public class Profesor
+{
+   //atributos accesibles para todas las clases
+   public string Nombre {get; set;}
+}
+
+public class Departamento
+{
+    public string Nombre {get; set;}
+   
+   //agregacion: relacion debil
+    public void MostrarProfesor(Profesor p)
+    {
+        //lo que saldra en consola
+        Console.WriteLine("Profesor: " + p.Nombre);
+        Console.WriteLine("Departamento: " + Nombre);
+    }
+}
+
+class Program 
+{
+    static void Main()
+    {
+        //objeto para profesor
+        Profesor profe=new Profesor();
+        profe.Nombre= "Lalo";
+        //objeto para departamento
+        Departamento poo=new Departamento();
+        poo.Nombre="Programacion Orientada a Objetos";
+        
+        poo.MostrarProfesor(profe);
+    }
+}
